@@ -4,13 +4,14 @@ frontend/dist/
 frontend/.env
 frontend/.env.local
 frontend/.env.*.local
+frontend/.env.example
 frontend/package-lock.json
 
 # Backend
 backend/node_modules/
 backend/.env
 backend/.env.local
-backend/dist/
+backend/.env.example
 backend/build/
 
 # General
