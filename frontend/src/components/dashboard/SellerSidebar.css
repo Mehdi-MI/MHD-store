@@ -1,0 +1,56 @@
+.sl-sidebar {
+  width: 240px; flex-shrink: 0;
+  background: var(--surface);
+  border-right: 0.5px solid var(--border);
+  display: flex; flex-direction: column;
+  position: sticky; top: 72px;
+  height: calc(100vh - 72px);
+  overflow-y: auto;
+}
+.sl-sidebar__brand {
+  display: flex; align-items: center; gap: 0.85rem;
+  padding: 1.5rem;
+  border-bottom: 0.5px solid var(--border);
+}
+.sl-sidebar__logo {
+  width: 40px; height: 40px;
+  background: var(--gold-subtle); border: 0.5px solid var(--border-hover);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; color: var(--gold); font-weight: 600; flex-shrink: 0;
+  overflow: hidden;
+}
+.sl-sidebar__logo img { width: 100%; height: 100%; object-fit: cover; }
+.sl-sidebar__store { font-size: 0.88rem; color: var(--text); font-weight: 400; }
+.sl-sidebar__status {
+  display: flex; align-items: center; gap: 0.4rem;
+  font-size: 0.68rem; color: var(--text-dim);
+  letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.15rem;
+}
+.sl-sidebar__status-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--text-dim);
+}
+.sl-sidebar__status-dot.active { background: #81b29a; }
+
+.sl-sidebar__nav {
+  flex: 1; display: flex; flex-direction: column; padding: 0.75rem 0;
+}
+.sl-sidebar__link {
+  display: flex; align-items: center; gap: 0.85rem;
+  padding: 0.85rem 1.5rem; font-size: 0.82rem;
+  color: var(--text-muted); text-decoration: none;
+  transition: all var(--transition);
+  border-left: 2px solid transparent;
+  background: none; border-top: none; border-right: none; border-bottom: none;
+  cursor: pointer; font-family: var(--font-body); width: 100%; text-align: left;
+}
+.sl-sidebar__link:hover { color: var(--text); background: var(--surface-2); }
+.sl-sidebar__link--active { color: var(--gold); border-left-color: var(--gold); background: var(--gold-subtle); }
+.sl-sidebar__link-icon { display: flex; align-items: center; color: inherit; }
+.sl-sidebar__link--muted { color: var(--text-dim); font-size: 0.78rem; }
+.sl-sidebar__link--logout:hover { color: #e07a5f; }
+
+.sl-sidebar__footer {
+  display: flex; flex-direction: column;
+  border-top: 0.5px solid var(--border); padding: 0.5rem 0;
+}

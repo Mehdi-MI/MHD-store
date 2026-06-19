@@ -1,0 +1,16 @@
+.customer-layout {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 72px;
+  background: var(--bg);
+}
+.customer-main {
+  flex: 1;
+  min-width: 0;
+  padding: 3rem;
+  overflow-x: hidden;
+}
+@media (max-width: 1024px) {
+  .customer-layout { flex-direction: column; }
+  .customer-main   { padding: 2rem; }
+}
