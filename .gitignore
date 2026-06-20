@@ -20,3 +20,4 @@ backend/build/
 .vscode/
 .idea/
 Thumbs.db
+.gitignore

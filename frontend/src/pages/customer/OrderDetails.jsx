@@ -1,5 +1,6 @@
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams, Link, useEffect } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './CustomerPages.css';
 
 const DEFAULT_ORDER = {
